@@ -5,7 +5,8 @@ import java.util.Map;
 
 /**
  * You are climbing a staircase. It takes n steps to reach the top.
- *Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+ * Each time you can either climb 1 or 2 steps.
+ * In how many distinct ways can you climb to the top?
  */
 public class ClimbingStairs {
     //0, 1, 2, 3, 4,
@@ -13,6 +14,8 @@ public class ClimbingStairs {
     public static void main(String[] args) {
         System.out.println(climbStairs(4));
     }
+
+    private static final Map<Integer, Integer> cache = new HashMap<>();
 
     public static int climbStairs(int n) {
         if (cache.containsKey(n)) {
@@ -29,6 +32,4 @@ public class ClimbingStairs {
         cache.put(n, result);
         return result;
     }
-
-    private static Map<Integer, Integer> cache = new HashMap<>();
 }

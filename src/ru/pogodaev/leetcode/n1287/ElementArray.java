@@ -4,16 +4,18 @@ package ru.pogodaev.leetcode.n1287;
 import java.util.HashMap;
 import java.util.Map;
 
-/**Given an integer array sorted in non-decreasing order,
+/**
+ * Given an integer array sorted in non-decreasing order,
  * there is exactly one integer in the array that occurs more than 25% of the time.
-
- Return that integer.*/
+ * <p>
+ * Return that integer.
+ */
 
 public class ElementArray {
 
     public static void main(String[] args) {
-        System.out.println(findSpecialInteger(new int[] {1,2,2,6,6,6,6,7,10}));
-        System.out.println(findSpecialInteger(new int[] {1,2,2,3}));
+        System.out.println(findSpecialInteger(new int[]{1, 2, 2, 6, 6, 6, 6, 7, 10}));
+        System.out.println(findSpecialInteger(new int[]{1, 2, 2, 3}));
     }
 
     public static int findSpecialInteger(int[] arr) {

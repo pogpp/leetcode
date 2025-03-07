@@ -1,9 +1,10 @@
 package ru.pogodaev.leetcode.n61;
 
 import ru.pogodaev.leetcode.ListNode;
+
 /**
-      *  Given the head of a linked list,rotate the list to the right by k places.
-       */
+ * Given the head of a linked list,rotate the list to the right by k places.
+ */
 
 public class RotateList {
     public static void main(String[] args) {

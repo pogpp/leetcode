@@ -13,10 +13,10 @@ public class TwoCitySched {
 
     public static void main(String[] args) {
         int[][] costs = {
-            {10, 20},
-            {30, 200},
-            {400, 50},
-            {30, 20}
+                {10, 20},
+                {30, 200},
+                {400, 50},
+                {30, 20}
         };
     }
 
@@ -31,7 +31,7 @@ public class TwoCitySched {
 
         int cost = 0;
         for (int i = 0; i < costs.length / 2; i++) {
-            cost += costs[i][1] + costs[costs.length-i-1][0];
+            cost += costs[i][1] + costs[costs.length - i - 1][0];
         }
         return cost;
     }

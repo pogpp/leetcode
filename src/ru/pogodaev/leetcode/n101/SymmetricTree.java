@@ -10,7 +10,7 @@ public class SymmetricTree {
         if (root == null) {
             return true;
         }
-        
+
         return mirror(root, root);
     }
 

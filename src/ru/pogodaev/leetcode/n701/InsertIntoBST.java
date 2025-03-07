@@ -10,6 +10,7 @@ public class InsertIntoBST {
             return root;
         }
         //traverse the tree
+
         if (val < root.val) {    //insert in the left subtree
             root.left = insertIntoBST(root.left, val);
         } else if (val > root.val) {   //insert in the right subtree

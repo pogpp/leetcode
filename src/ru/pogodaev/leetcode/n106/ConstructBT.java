@@ -8,7 +8,8 @@ import java.util.Stack;
 
 /**
  * Given two integer arrays inorder and postorder where inorder is the inorder traversal of
- * a binary tree and postorder is the postorder traversal of the same tree, construct and return the binary tree.*/
+ * a binary tree and postorder is the postorder traversal of the same tree, construct and return the binary tree.
+ */
 // TODO: 19.04.2022  
 public class ConstructBT {
 
@@ -33,8 +34,8 @@ public class ConstructBT {
 //        for (int k : mem) System.out.println(k);
 
     }
-    public TreeNode buildTree(int[] inorder, int[] postorder) {
 
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
 
 
         return null;

@@ -3,7 +3,7 @@ package ru.pogodaev.leetcode.n713;
 /**
  * Given an array of integers nums and an integer k,
  * return the number of contiguous subarrays where the product of all the elements in the subarray is strictly less than k.
- * */
+ */
 
 public class SubarrayProductLessThanK {
     public int numSubarrayProductLessThanK(int[] nums, int k) {

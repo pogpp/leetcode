@@ -4,11 +4,11 @@ import java.util.Arrays;
 
 /**
  * Given two strings s and t, check if s is a subsequence of t.
- *
+ * <p>
  * A subsequence of a string is a new string that is formed from the original string by deleting some (can be none)
  * of the characters without disturbing the relative positions of the remaining characters.
  * (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
- * */
+ */
 
 
 public class IsSubsequence {
@@ -40,7 +40,7 @@ public class IsSubsequence {
             for (int k = j; k < tt.length; k++) {
                 if (m == tt[k]) {
                     indexes[i] = k;
-                    j=k;
+                    j = k;
                     tt[k] = 0;
                     i++;
                     found = true;

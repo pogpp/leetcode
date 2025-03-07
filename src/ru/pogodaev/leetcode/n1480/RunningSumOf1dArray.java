@@ -8,7 +8,7 @@ package ru.pogodaev.leetcode.n1480;
  */
 public class RunningSumOf1dArray {
     public static void main(String[] args) {
-        int[] ex1 = runningSum(new int[]{1,2,3,4});
+        int[] ex1 = runningSum(new int[]{1, 2, 3, 4});
 
         for (int j : ex1) {
             System.out.println(j);

@@ -7,7 +7,7 @@ public class ProductAndSum {
         System.out.println(subtractProductAndSum(4421));
     }
 
-     public static int subtractProductAndSum(int n) {
+    public static int subtractProductAndSum(int n) {
         int sum = 0;
         int product = 1;
         int k;

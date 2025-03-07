@@ -17,12 +17,10 @@ public class HeightChecker {
 //        3, 1 , 0, 3
 
 
-
         for (int height : heights) {
             heightToFreq[height]++;
         }
 //        0, 1, 0, 2hc
-
 
 
         for (int height : heights) {

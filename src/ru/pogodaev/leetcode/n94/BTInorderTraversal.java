@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+/**
+ * Given the root of a binary tree, return the inorder traversal of its nodes' values.
+ */
 public class BTInorderTraversal {
 
     public static void main(String[] args) {
@@ -20,14 +23,6 @@ public class BTInorderTraversal {
         root.right = new TreeNode();
         root.right.val = 4;
         inorderTraversal(root);
-//        rec(root);
-//
-//        List<Integer> list = new ArrayList<>();
-//
-//        List<Integer> mem = recMem(root, list);
-//
-//        for (int k : mem) System.out.println(k);
-
     }
 
     public static List<Integer> inorderTraversal(TreeNode root) {
@@ -43,32 +38,9 @@ public class BTInorderTraversal {
             } else {
                 root = stack.pop();
                 result.add(root.val);
-                System.out.println(root.val);
                 root = root.right;
             }
         }
         return result;
     }
-
-    public static void rec(TreeNode root) {
-
-        if (root == null) return;
-
-        rec(root.left);
-        System.out.println(root.val);
-        rec(root.right);
-
-    }
-
-    public static List<Integer> recMem(TreeNode root, List<Integer> list) {
-        if (root == null) return list;
-
-
-        recMem(root.left, list);
-        list.add(root.val);
-        recMem(root.right, list);
-
-        return list;
-    }
-
 }

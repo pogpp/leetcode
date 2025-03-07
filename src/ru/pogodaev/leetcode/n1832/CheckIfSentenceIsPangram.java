@@ -13,6 +13,7 @@ public class CheckIfSentenceIsPangram {
         String ex1 = "thequickbrownfoxjumpsoverthelazydog";
         System.out.println(checkIfPangram(ex1));
     }
+
     public static boolean checkIfPangram(String sentence) {
         Set<Character> set = new HashSet<>();
         for (char c : sentence.toCharArray()) {
